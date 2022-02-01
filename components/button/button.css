@@ -9,7 +9,6 @@
     background: var(--primary-color);
     color: var(--white-color);
     border-radius: 2.5px;
-    /* opacity: 0.5; */
 }
 
 .btn-success {
@@ -32,12 +31,13 @@
 
 .btn-info {
     background: var(--info-color);
+    color: var(--gray-color);
     border-radius: 2.5px;
 }
 
 .btn-primary-outline {
     border: 2px solid var(--primary-color);
-    color: var();
+    color: var(--primary-color);
     border-radius: 2.5px;
 }
 
@@ -47,7 +47,7 @@
 }
 .btn-success-outline {
     border: 2px solid var(--success-color);
-    color: var();
+    color: var(--success-color);
     border-radius: 2.5px;
 }
 
@@ -57,7 +57,7 @@
 }
 .btn-warning-outline {
     border: 2px solid var(--warning-color);
-    color: var();
+    color: var(--warning-color);
     border-radius: 2.5px;
 }
 
@@ -67,7 +67,7 @@
 }
 .btn-danger-outline {
     border: 2px solid var(--danger-color);
-    color: var();
+    color: var(--danger-color);
     border-radius: 2.5px;
 }
 
@@ -77,13 +77,12 @@
 }
 .btn-info-outline {
     border: 2px solid var(--info-color);
-    color: var();
+    color: var(--gray-color);
     border-radius: 2.5px;
 }
 
 .btn-info-outline:hover {
     background: var(--info-color);
-    border-radius: 2.5px;
 }
 
 .btn i {
