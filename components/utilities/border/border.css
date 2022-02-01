@@ -1,0 +1,15 @@
+.border-radius-sm {
+    border-radius: var(--border-radius-small);
+}
+
+.border-radius-md {
+    border-radius: var(--border-radius-medium);
+}
+
+.border-radius-lg {
+    border-radius: var(--border-radius-large);
+}
+
+.border-radius-circle {
+    border-radius: var(--border-radius-circle)
+}
