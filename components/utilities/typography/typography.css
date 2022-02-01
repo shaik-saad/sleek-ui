@@ -1,0 +1,56 @@
+@import url(../../../css/variables.css);
+
+h1 {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+}
+
+h2 {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+}
+
+h3 {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+}
+
+h4 {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+}
+
+h5 {
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+}
+
+h6 {
+    font-size: var(--font-size-6);
+    line-height: var(--line-height-6);
+}
+
+.text-xl {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+}
+
+.text-lg {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+}
+
+.text-md {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+}
+
+.text-sm {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+}
+
+.text-xs {
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+}
