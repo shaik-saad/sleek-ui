@@ -1,0 +1,19 @@
+:root{
+    /* sleek ui colors */
+    --primary-color: #D42142;
+
+    /* action colors */
+    --success-color: #52C41A;
+    --warning-color: #FAAD14;
+    --danger-color: #FF4D4F;
+    --info-color: #CFF4FC;
+    --light-color: #F8F9FA;
+    --dark-color: #212529;
+
+    /* Basic colors */
+    --black-color: #282828;
+    --white-color: #FFF;
+    --lynx-white-color: #F7F7F7;
+    --gray-color: #9A9A9A;
+    --lynx-gray-color: #C5C5C5;
+}
