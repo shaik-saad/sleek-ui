@@ -25,11 +25,11 @@
     --font-size-5: 0.8rem;
 
     /* line height */
-    --line-heignt: 6.4rem;
-    --line-heignt: 4rem;
-    --line-heignt: 3.2rem;
-    --line-heignt: 2.4rem;
-    --line-heignt: 1.6rem;
+    --line-heignt-1: 6.4rem;
+    --line-heignt-2: 4rem;
+    --line-heignt-3: 3.2rem;
+    --line-heignt-4: 2.4rem;
+    --line-heignt-5: 1.6rem;
 
     /* Border Radius */
     --border-radius-small: 5px;
