@@ -23,6 +23,7 @@
     --font-size-3: 2.4rem;
     --font-size-4: 1.6rem;
     --font-size-5: 1.2rem;
+    --font-size-6: 1rem;
 
     /* line height */
     --line-heignt-1: 6.4rem;
@@ -30,6 +31,7 @@
     --line-heignt-3: 3.2rem;
     --line-heignt-4: 2.4rem;
     --line-heignt-5: 1.6rem;
+    --line-height-6: 1.2rem;
 
     /* Border Radius */
     --border-radius-small: 5px;
