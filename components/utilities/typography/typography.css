@@ -1,11 +1,5 @@
-@import url(../../../css/resetDefault.css);
 @import url(../../../css/variables.css);
 
-
-h1, h2, h3,
-h4, h5 {
-    font-family: 'raleway', sans-serif;
-}
 h1 {
     font-size: var(--font-size-1);
     line-height: var(--line-height-1);
