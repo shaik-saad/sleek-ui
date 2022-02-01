@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%; /* 10px */
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
