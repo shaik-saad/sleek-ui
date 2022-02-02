@@ -1,0 +1,31 @@
+.avatar {
+    margin: 0.5rem;
+}
+
+.avatar > img {
+    border-radius: var(--border-radius-circle);
+}
+
+.avatar-square > img {
+    border-radius: var(--border-radius-small);
+}
+
+.avatar-xl > img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.avatar-lg > img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.avatar-md > img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.avatar-sm > img {
+    height: 2rem;
+    width: 2rem;
+}
