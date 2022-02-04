@@ -1,21 +1,25 @@
 :root{
     /* sleek ui colors */
-    --primary-color: #D42142;
-
-    /* action colors */
-    --success-color: #52C41A;
-    --warning-color: #FAAD14;
-    --danger-color: #FF4D4F;
-    --info-color: #CFF4FC;
-    --light-color: #F8F9FA;
-    --dark-color: #212529;
+    --sleek-purple-color-100: #E9D8FD;
+    --sleek-purple-color-500: #805AD5;
+    --sleek-purple-color-600: #6B46C1;
+    --sleek-gray-color-100: #EDF2F7;
+    --sleek-gray-color-400: #A0AEC0;
+    --sleek-gray-color-600: #4A5568;
 
     /* Basic colors */
     --black-color: #282828;
     --white-color: #FFF;
     --lynx-white-color: #F7F7F7;
-    --gray-color: #9A9A9A;
-    --lynx-gray-color: #C5C5C5;
+
+    --primary-color: var(--sleek-purple-color-500);
+    --secondary-color: var(--sleek-gray-color-400);
+
+    /* action colors */
+    --success-color: #52C41A;
+    --warning-color: #FAAD14;
+    --danger-color: #FF4D4F;
+    --info-color: #90CDF4;
 
     /* Font sizes */
     --font-size-1: 3rem;
@@ -33,9 +37,20 @@
     --line-heignt-5: 1rem;
     --line-height-6: 0.75rem;
 
+    /* font weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;
+
     /* Border Radius */
+    --border-radius-extra-small: 2.5px;
     --border-radius-small: 5px;
     --border-radius-medium: 10px;
     --border-radius-larger: 15px;
     --border-radius-circle: 999px;
+
+    /* box shadow */
+    --box-shadow: 0 2px 4px rgba(40, 40, 40, 0.15)
 }
