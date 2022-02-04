@@ -1,0 +1,24 @@
+/* background color utils */
+.bg-primary {
+    background: var(--primary-color);
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+}
+
+.bg-success {
+    background: var(--success-color);
+}
+
+.bg-warning {
+    background: var(--warning-color);
+}
+
+.bg-danger {
+    background: var(--danger-color);
+}
+
+.bg-info {
+    background: var(--info-color);
+}
