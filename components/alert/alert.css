@@ -45,6 +45,6 @@
 }
 
 .alert-info-outline {
-    color: var(--lynx-gray-color);
+    color: var(--info-color);
     border: 2px solid var(--info-color);
 }
