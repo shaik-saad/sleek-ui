@@ -1,0 +1,73 @@
+.form-label {
+    display: block;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid var(--sleek-gray-color-400);
+    border-radius: var(--border-radius-extra-small);
+    margin: 0.5rem 0;
+}
+
+.form-field:focus {
+    border: 1px solid var(--info-color);
+    outline: 0.25rem solid rgba(144, 205, 244, 0.3);
+}
+
+.form-text {
+    font-size: var(--font-size-5);
+    margin-top: 0.125rem;
+}
+
+.error-text {
+    color: var(--danger-color);
+}
+
+.error-field {
+    border: 1px solid var(--danger-color);
+}
+
+.warning-text {
+    color: var(--warning-color);
+}
+
+.warning-field {
+    border: 1px solid var(--warning-color);
+}
+
+.success-text {
+    color: var(--success-color);
+}
+
+.success-field {
+    border: 1px solid var(--success-color);
+}
+
+.form-text-area {
+    resize: vertical;
+}
+
+.input-container {
+    display: flex;
+}
+
+.form-radio {
+    margin-right: 0.125rem;
+}
+
+.form-checkbox {
+    margin-right: 0.125rem;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled-label {
+    color: var(--sleek-gray-color-400);
+    cursor: not-allowed;
+}
