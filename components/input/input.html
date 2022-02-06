@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+
+    <link rel="stylesheet" href="../../css/resetDefault.css">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../utilities/typography/typography.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+<body>
+
+    <div class="container">
+        <label class="form-label" for="">Email *</label>
+        <input class="form-field" type="email" name="" id="" required>
+        <label class="form-label" for="">Enter your query here: *</label>
+        <textarea class="form-field form-text-area" name="" id="" rows="5"></textarea>
+    </div>
+    <div class="container">
+        <label class="form-label error-label" for="">Password *</label>
+        <input  class="form-field error-field" type="password" name="" id="">
+        <div class="form-text error-text">Your password is incorrect</div>
+        <label class="form-label warning-label" for="">Password *</label>
+        <input class="form-field warning-field" type="password" name="" id="">
+        <div class="form-text warning-text">Your password is weak</div>
+        <label class="form-label success-label" for="">Password *</label>
+        <input class="form-field success-field" type="password" name="" id="">
+        <div class="form-text success-text">Your password is strong</div>
+    </div>
+
+    <div class="container input-container">
+        <label class="form-label" for="checkedRadioInput">
+            <input class="form-radio" type="radio" name="radioExample" id="checkedRadioInput" checked>
+            Checked
+        </label>
+        <label class="form-label" for="uncheckedRadioInput">
+            <input class="form-radio" class="form-field" type="radio" name="radioExample" id="uncheckedRadioInput">
+            Unchecked
+        </label>
+        <label class="form-label disabled-label" for="disabledRadioInput">
+            <input class="form-radio disabled" type="radio" name="radioExample" id="disabledRadioInput" disabled>
+            Disabled
+        </label>
+    </div>
+    <div class="container input-container">
+        <label class="form-label" for="checkedCheckboxInput">
+            <input class="form-checkbox" type="checkbox" name="checkboxExample" id="checkedCheckboxInput" checked>
+            Checked
+        </label>
+        <label class="form-label" for="uncheckedCheckboxInput">
+            <input class="form-checkbox" type="checkbox" name="checkboxExample" id="uncheckedCheckboxInput">
+            Unchecked
+        </label>
+        <label class="form-label disabled-label" for="disabledCheckboxInput">
+            <input class="form-checkbox disabled" type="checkbox" name="checkboxExample" id="disabledCheckboxInputcheckboxExample" disabled>
+            Disabled
+        </label>
+    </div>
+    
+</body>
+</html>
