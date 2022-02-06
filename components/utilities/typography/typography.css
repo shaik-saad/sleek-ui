@@ -52,3 +52,19 @@ h6 {
     font-size: var(--font-size-5);
     line-height: var(--line-height-5);
 }
+
+.text-gray {
+    color: var(--secondary-color);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
