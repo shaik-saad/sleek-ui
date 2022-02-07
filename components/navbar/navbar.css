@@ -1,0 +1,60 @@
+.navbar {
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.navbar-section {
+    padding: 1rem;
+}
+
+.nav-brand {
+    text-decoration: none;
+    font-size: var(--font-size-3);
+    color: inherit;
+}
+
+.nav-list {
+    display: inline-flex;
+}
+
+.nav-list-item {
+    padding: 0 0.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.nav-form {
+    display: inline-flex;
+}
+
+/* navbar color variations */
+.navbar-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.navbar-dark {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.navbar-light {
+    background-color: var(--info-color);
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-form {
+        display: none;
+    }
+}
