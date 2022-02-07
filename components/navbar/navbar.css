@@ -1,7 +1,6 @@
 .navbar {
     width: 100%;
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background-color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,18 +11,10 @@
     padding: 1rem;
 }
 
-.navbar-dark {
-    background-color: var(--black-color);
-}
-
-.navbar-light {
-    background-color: var(--info-color);
-}
-
 .nav-brand {
     text-decoration: none;
     font-size: var(--font-size-3);
-    color: var(--white-color);
+    color: inherit;
 }
 
 .nav-list {
@@ -45,6 +36,21 @@
 
 .nav-form {
     display: inline-flex;
+}
+
+/* navbar color variations */
+.navbar-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.navbar-dark {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.navbar-light {
+    background-color: var(--info-color);
 }
 
 @media only screen and (max-width: 600px) {
