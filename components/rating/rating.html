@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+
+    <link rel="stylesheet" href="../../css/resetDefault.css">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../utilities/typography/typography.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="../input/input.css">
+    <link rel="stylesheet" href="./rating.css">
+
+    <script src="https://kit.fontawesome.com/10d4b640fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="rating-container">
+        <input class="rating-input" type="radio" name="rating" id="rate-5" value="5">
+        <label class="rating-label" for="rate-5"><i class="fas fa-star"></i></label>
+
+        <input class="rating-input" type="radio" name="rating" id="rate-4" value="4">
+        <label class="rating-label" for="rate-4"><i class="fas fa-star"></i></label>
+
+        <input class="rating-input" type="radio" name="rating" id="rate-3" value="3">
+        <label class="rating-label" for="rate-3"><i class="fas fa-star"></i></label>
+        
+        <input class="rating-input" type="radio" name="rating" id="rate-2" value="2">
+        <label class="rating-label" for="rate-2"><i class="fas fa-star"></i></label>
+        
+        <input class="rating-input" type="radio" name="rating" id="rate-1" value="1">
+        <label class="rating-label" for="rate-1"><i class="fas fa-star"></i></label>
+    </div>
+    <div class="rating-output">0 <i class="fas fa-star"></i></div>
+
+    <script src="rating.js"></script>
+</body>
+</html>
