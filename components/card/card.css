@@ -1,0 +1,127 @@
+.card {
+    display: inline-block;
+    width: 18rem;
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow), 0 -1px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0.5rem;
+}
+
+.card-header {
+    margin: 0 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .btn{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.card-header .btn {
+    padding: 0;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .card-title {
+    margin-bottom: 0.5rem;
+}
+
+/* normal card image style */
+.card-image {
+    width: 100%;
+    height: auto;
+    max-height: 11.25rem;
+    object-fit: cover;
+    border-top-left-radius: var(--border-radius-small);
+    border-top-right-radius: var(--border-radius-small);
+}
+
+/* card portrait image */
+.card-image-vertical {
+    max-height: 18rem;
+}
+
+/* card badge on the left */
+.card-badge {
+    background: var(--danger-color);
+    color: var(--white-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--border-radius-extra-small);
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 10px;
+    left: -5px;
+}
+
+/* card like badge */
+.card-badge-heart {
+    padding: 0.5rem 0.625rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--secondary-color);
+    background: var(--white-color);
+    border-radius: var(--border-radius-circle);
+    cursor: pointer;
+}
+
+/* Horizontal card styling starts here */
+.card-horizontal {
+    width: 36rem;
+    height: 18rem;
+    display: inline-flex;
+}
+
+.card-horizontal .card-image {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--border-radius-small);
+    flex-basis: 40%;
+}
+
+.card-horizontal .card-body {
+    flex-basis: 60%;
+}
+
+/* overlay text styling starts here */
+.overlay-container {
+    background: rgba(234, 234, 236, 0.6);
+    border-radius: var(--border-radius-small);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    background: var(--white-color);
+    color: var(--danger-color);
+    padding: 1rem;
+    border-radius: var(--border-radius-small);
+}
+
+/* media query for horizontal card */
+@media only screen and (max-width: 600px){
+    .card-horizontal {
+        display: block;
+        width: 18rem;
+        height: auto;
+    }
+    
+    .card-horizontal .card-image {
+        border-top-right-radius: var(--border-radius-small);
+        border-bottom-left-radius: 0;
+    }
+}
