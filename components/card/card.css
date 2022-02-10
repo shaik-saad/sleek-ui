@@ -1,6 +1,6 @@
 .card {
     display: inline-block;
-    width: 18rem;
+    max-width: 18rem;
     border-radius: var(--border-radius-small);
     box-shadow: var(--box-shadow);
     position: relative;
@@ -84,7 +84,7 @@
 
 /* Horizontal card styling starts here */
 .card-horizontal {
-    width: 36rem;
+    max-width: 36rem;
     height: 18rem;
     display: inline-flex;
 }
@@ -124,7 +124,7 @@
 @media only screen and (max-width: 600px){
     .card-horizontal {
         display: block;
-        width: 18rem;
+        max-width: 18rem;
         height: auto;
     }
     
