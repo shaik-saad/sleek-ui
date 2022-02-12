@@ -8,7 +8,7 @@
     display: block;
     width: 100%;
     padding: 0.5rem 0.5rem;
-    border: 1px solid var(--sleek-gray-color-400);
+    border: 1px solid var(--sleek-gray-color);
     border-radius: var(--border-radius-extra-small);
     margin: 0.5rem 0;
 }
@@ -68,6 +68,6 @@
 }
 
 .disabled-label {
-    color: var(--sleek-gray-color-400);
+    color: var(--sleek-gray-color);
     cursor: not-allowed;
 }

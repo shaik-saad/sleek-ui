@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Raleway:wght@300;400;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -24,9 +24,44 @@ ul {
 	list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 button,
 input,
 select,
 textarea {
     font: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 112.5%;
+    }
 }

@@ -19,17 +19,6 @@
 
 .toast-close-btn {
     background: inherit;
-    padding: 0.5rem;
-}
-
-.toast-close-btn {
-    color: inherit;
-    padding: 0.5rem 0.75rem;
-    border-radius: var(--border-radius-small);
-}
-
-.toast-close-btn:hover {
-    background: rgba(0, 0, 0, 0.05);
 }
 
 .toast-success {
