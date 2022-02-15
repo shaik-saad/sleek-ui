@@ -60,7 +60,7 @@ textarea {
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1450px) {
     html {
         font-size: 112.5%;
     }
