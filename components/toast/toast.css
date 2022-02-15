@@ -9,6 +9,11 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: none;
+}
+
+.show-toast {
+    display: block;
 }
 
 .toast-body {
@@ -19,6 +24,7 @@
 
 .toast-close-btn {
     background: inherit;
+    color: inherit;
 }
 
 .toast-success {
@@ -28,7 +34,6 @@
 
 .toast-warning {
     background-color: var(--warning-color);
-    color: var(--white-color);
 }
 
 .toast-error {

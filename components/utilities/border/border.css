@@ -12,7 +12,7 @@
 }
 
 .br-lg {
-    border-radius: var(--border-radius-large);
+    border-radius: var(--border-radius-larger);
 }
 
 .br-circle {
