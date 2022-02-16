@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Input | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li><a href="./buttons.html">Buttons</a></li>
+                            <li><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li class="active"><a href="./input.html">Input</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 class="mt-4">Input</h2>
+            <p class="fs-5 lh-3 fw-light">
+                SLEEK UI provides inputs, inputs with validations, radio buttons and check boxes.
+            </p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+
+                <!-- Simple Input-->
+                <h3 id="simple-inputs" class="my-2">Simple Inputs</h3>
+                <p class="fw-light mb-4">
+                    Simple inputs gives an idea of what's input boxes look like in SLEEK UI
+                </p>
+                <!-- Input example -->
+                <div class="component-example-container p-5">
+                    <div class="component-example-width">    
+                        <label class="form-label" for="email">Email *</label>
+                        <input class="form-field" type="email" name="email" id="email" required>
+                        <label class="form-label" for="text-area">Enter your query here: *</label>
+                        <textarea class="form-field form-text-area" name="text-area" id="text-area" rows="5"></textarea>
+                    </div>
+                </div>
+                
+                <!-- Input example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;input class="form-field" type="email" name="email" id="email" required>
+                            &lt;label class="form-label" for="text-area">Enter your query here: *&lt;/label>
+                            &lt;textarea class="form-field form-text-area" name="text-area" id="text-area" rows="5">&lt;/textarea>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Input Validations-->
+                <h3 id="input-validations" class="my-2">Input validations</h3>
+                <p class="fw-light mb-4">
+                    Inputs validations enhance the inputs with particular state of the input. SLEEK UI provides three states <code class="text-primary-fs6">error-field</code>
+                    <code class="text-primary-fs6">warning-field</code>
+                    <code class="text-primary-fs6">success-field</code>
+                </p>
+                <!-- Input validations example -->
+                <div class="component-example-container p-5">
+                    <div class="component-example-width">
+                        <label class="form-label error-label" for="password-error-example">Password *</label>
+                        <input class="form-field error-field" type="password" name="password-error-example" id="password-error-example">
+                        <div class="form-text error-text">Your password is incorrect</div>
+                        <label class="form-label warning-label" for="password-warning-example">Password *</label>
+                        <input class="form-field warning-field" type="password" name="password-warning-example" id="password-warning-example">
+                        <div class="form-text warning-text">Your password is weak</div>
+                        <label class="form-label success-label" for="password-success-example">Password *</label>
+                        <input class="form-field success-field" type="password" name="password-success-example" id="password-success-example">
+                        <div class="form-text success-text">Your password is strong</div>
+                    </div>
+                </div>
+                
+                <!-- Input validations example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;label class="form-label error-label" for="password-error-example">Password *&lt;/label>
+                            &lt;input class="form-field error-field" type="password" name="password-error-example" id="password-error-example">
+                            &lt;div class="form-text error-text">Your password is incorrect&lt;/div>
+                            &lt;label class="form-label warning-label" for="password-warning-example">Password *&lt;/label>
+                            &lt;input class="form-field warning-field" type="password" name="password-warning-example" id="password-warning-example">
+                            &lt;div class="form-text warning-text">Your password is weak&lt;/div>
+                            &lt;label class="form-label success-label" for="password-success-example">Password *&lt;/label>
+                            &lt;input class="form-field success-field" type="password" name="password-success-example" id="password-success-example">
+                            &lt;div class="form-text success-text">Your password is strong&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Radio input -->
+                <h3 id="radio-input" class="my-2">Radio Input</h3>
+                <p class="fw-light mb-4">
+                    To use radio inputs use <code class="text-primary-fs6">form-radio</code> class
+                    and for inline inputs wrap them in a container class <code class="text-primary-fs6">input-container</code>
+                </p>
+                <!-- Radio input example -->
+                <div class="component-example-container p-5">
+                    <div class="input-container">
+                        <label class="form-label" for="checked-radio-input">
+                            <input class="form-radio" type="radio" name="radio-example" id="checked-radio-input" checked>
+                            Checked
+                        </label>
+                        <label class="form-label" for="unchecked-radio-input">
+                            <input class="form-radio" class="form-field" type="radio" name="radio-example" id="unchecked-radio-input">
+                            Unchecked
+                        </label>
+                        <label class="form-label disabled-label" for="disabled-radio-input">
+                            <input class="form-radio disabled" type="radio" name="radio-example" id="disabled-radio-input" disabled>
+                            Disabled
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Radio input example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="input-container">
+                                &lt;label class="form-label" for="checked-radio-input">
+                                    &lt;input class="form-radio" type="radio" name="radio-example" id="checked-radio-input" checked>
+                                    Checked
+                                &lt;/label>
+                            &lt;label class="form-label" for="unchecked-radio-input">
+                                &lt;input class="form-radio" class="form-field" type="radio" name="radio-example" id="unchecked-radio-input">
+                                    Unchecked
+                                &lt;/label>
+                            &lt;label class="form-label disabled-label" for="disabled-radio-input">
+                                &lt;input class="form-radio disabled" type="radio" name="radio-example" id="disabled-radio-input" disabled>
+                                    Disabled
+                                &lt;/label>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Checkbox Input -->
+                <h3 id="checkbox-input" class="my-2">Checkbox Input</h3>
+                <p class="fw-light mb-4">
+                    To use checkbox inputs use <code class="text-primary-fs6">form-checkbox</code> class
+                    and for inline inputs wrap them in a container class <code class="text-primary-fs6">input-container</code>
+                </p>
+                <!-- Checkbox Input example -->
+                <div class="component-example-container p-5">
+                    <div class="input-container">
+                        <label class="form-label" for="checked-checkbox-input">
+                            <input class="form-checkbox" type="checkbox" name="checkbox-example" id="checked-checkbox-input" checked>
+                            Checked
+                        </label>
+                        <label class="form-label" for="unchecked-checkbox-input">
+                            <input class="form-checkbox" type="checkbox" name="checkbox-example" id="unchecked-checkbox-input">
+                            Unchecked
+                        </label>
+                        <label class="form-label disabled-label" for="disabled-checkbox-input">
+                            <input class="form-checkbox disabled" type="checkbox" name="checkbox-example" id="disabled-checkbox-input" disabled>
+                            Disabled
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Checkbox Input example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="input-container">
+                                &lt;label class="form-label" for="checked-checkbox-input">
+                                    &lt;input class="form-checkbox" type="checkbox" name="checkbox-example" id="checked-checkbox-input" checked>
+                                    Checked
+                                &lt;/label>
+                                &lt;label class="form-label" for="unchecked-checkbox-input">
+                                    &lt;input class="form-checkbox" type="checkbox" name="checkbox-example" id="unchecked-checkbox-input">
+                                    Unchecked
+                                &lt;/label>
+                                &lt;label class="form-label disabled-label" for="disabled-checkbox-input">
+                                    &lt;input class="form-checkbox disabled" type="checkbox" name="checkbox-example" id="disabled-checkbox-input" disabled>
+                                    Disabled
+                                &lt;/label>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#simple-inputs">
+                            Simple Inputs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#input-validations">
+                            Input Validations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#radio-input">
+                            Radio Input
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#checkbox-input">
+                            Checkbox Input
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>
