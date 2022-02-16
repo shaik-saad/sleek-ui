@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Typography | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li><a href="./buttons.html">Buttons</a></li>
+                            <li><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./input.html">Input</a></li>
+                            <li class="active"><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 class="mt-4">Typography</h2>
+            <p class="fs-5 lh-3 fw-light">Documentation for typography used in SLEEK UI</p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+
+                <!-- Headings -->
+                <h3 id="headings" class="my-2">Headings</h3>
+                <p class="fw-light mb-4">
+                    All headings from <code class="text-primary fs-6">&lt;h1></code> to <code class="text-primary fs-6">&lt;h6></code> are available.
+                </p>
+
+                <!-- Headings Example -->
+                <div class="component-example-container p-5">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+
+                <!-- Headings Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;h1>Heading 1&lt;/h1>
+                            &lt;h2>Heading 2&lt;/h2>
+                            &lt;h3>Heading 3&lt;/h3>
+                            &lt;h4>Heading 4&lt;/h4>
+                            &lt;h5>Heading 5&lt;/h5>
+                            &lt;h6>Heading 6&lt;/h6>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Text Sizes -->
+                <h3 id="text-sizes" class="my-2">Text Sizes</h3>
+                <p class="fw-light mb-4">
+                    Text sizes are available in <code class="text-primary fs-6">xl, lg, md</code> and <code class="text-primary fs-6">sm</code>
+                </p>
+                
+                <!-- Text Sizes Example -->
+                <div class="component-example-container p-5">
+                    <p class="text-xl">Paragraph size extra large</p>
+                    <p class="text-lg">Paragraph size large</p>
+                    <p class="text-md">Paragraph size medium</p>
+                    <p>Paragraph size regular</p>
+                    <p class="text-sm">Paragraph size small</p>
+                </div>
+
+                <!-- Text Sizes Example Code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;p class="text-xl">Paragraph size extra large&lt;/p>
+                            &lt;p class="text-lg">Paragraph size large&lt;/p>
+                            &lt;p class="text-md">Paragraph size medium&lt;/p>
+                            &lt;p>Paragraph size regular&lt;/p>
+                            &lt;p class="text-sm">Paragraph size small&lt;/p>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Text Alignment -->
+                <h3 id="text-alignment" class="my-2">Text Alignment</h3>
+                <p class="fw-light mb-4">
+                    Text alignment are available as <code class="text-primary fs-6">text-left</code>, <code class="text-primary fs-6">text-center</code> and<code class="text-primary fs-6"> text-right</code>
+                </p>
+
+                <!-- Text Alignment Example-->
+                <div class="component-example-container p-5">
+                    <h3 class="text-left">This is left aligned</h3>
+                    <h3 class="text-center">This is center aligned</h3>
+                    <h3 class="text-right">This is right aligned</h3>
+                </div>
+
+                <!-- Text Alignment Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;h3 class="text-left">This is left aligned&lt;/h3>
+                            &lt;h3 class="text-center">This is center aligned&lt;/h3>
+                            &lt;h3 class="text-right">This is right aligned&lt;/h3>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Gray Text -->
+                <h3 id="gray-text" class="my-2">Gray Text</h3>
+                <p class="fw-light mb-4">
+                    To use text in gray color use class <code class="text-primary fs-6">text-gray</code>
+                </p>
+
+                <!-- Gray Text Example-->
+                <div class="component-example-container p-5">
+                    <p class="text-gray">this a gray text</p>
+                </div>
+
+                <!-- Gray Text Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;p class="text-gray">this a gray text&lt;/p>
+                        </code>
+                    </pre>
+                </div>
+
+                <h3 id="gray-text" class="my-2">Text Colors</h3>
+                <p class="fw-light mb-4">
+                    To use text in colors use classes <code class="text-primary fs-6">text-{actionColor}</code>
+                    where <code class="text-primary fs-6">actionColor</code> are <code class="text-primary fs-6">primary, secondary, success, warning, danger</code> and <code class="text-primary fs-6">info</code>
+                </p>
+
+                <!-- Gray Text Example-->
+                <div class="component-example-container p-5">
+                    <p class="text-primary">this a primary text</p>
+                    <p class="text-secondary">this a secondary text</p>
+                    <p class="text-success">this a success text</p>
+                    <p class="text-warning">this a warning text</p>
+                    <p class="text-danger">this a danger text</p>
+                    <p class="text-info">this a info text</p>
+                </div>
+
+                <!-- Gray Text Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;p class="text-primary">this a primary text&lt;/p>
+                            &lt;p class="text-secondary">this a secondary text&lt;/p>
+                            &lt;p class="text-success">this a success text&lt;/p>
+                            &lt;p class="text-warning">this a warning text&lt;/p>
+                            &lt;p class="text-danger">this a danger text&lt;/p>
+                            &lt;p class="text-info">this a info text&lt;/p>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#headings">Headings</a>
+                    </li>
+                    <li>
+                        <a href="#text-sizes">Text Sizes</a>
+                    </li>
+                    <li>
+                        <a href="#text-alignment">Text Alignment</a>
+                    </li>
+                    <li>
+                        <a href="#gray-text">Gray Text</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>
