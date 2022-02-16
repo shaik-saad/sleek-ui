@@ -113,9 +113,6 @@ html {
 
     /* List item styles */
 .side-nav-sub-list > li {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
     border-top-left-radius: var(--border-radius-extra-small);
     border-bottom-left-radius: var(--border-radius-extra-small);
     transition: background 0.2s linear;
@@ -128,6 +125,13 @@ html {
 
 .side-nav-sub-list > li:not(.active):hover {
     background: #f9f0ff;
+}
+
+.side-nav-sub-list li a {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
 }
 /* Side navigation styles end here */
 
@@ -237,6 +241,7 @@ html {
     /* Side nav toggler on small screens */
     .menu-toggler {
         display: flex;
+        cursor: pointer;
         justify-content: space-between;
         box-shadow: var(--box-shadow);
     }
