@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Buttons | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Get Started</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../installation.html">Installation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li class="active"><a href="./buttons.html">Buttons</a></li>
+                            <li><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./input.html">Input</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mt-4 mx-4">
+            <h2 class="mt-4">Buttons</h2>
+            <p class="fs-5 lh-3 fw-light">SLEEK UI provides different types of buttons which can be used at various use case scenarios.</p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+
+                <!-- Buttons -->
+                <h3 id="contained-buttons" class="my-2">Contained Buttons</h3>
+                <p class="fw-light mb-4">
+                    These buttons are filled with the action color. In order to use buttons use class name <code class="text-primary fs-6">btn</code> and then followed by class name for type of button.
+                    eg: <code class="text-primary fs-6">btn btn-primary</code> this gives a button of primary color.
+                </p>
+
+                <!-- Buttons example -->
+                <div class="component-example-container p-5">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-warning">Warning</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-info">Info</button>
+                </div>
+
+                <!-- Buttons example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;button class="btn btn-primary">Primary&lt;/button>
+                            &lt;button class="btn btn-secondary">Secondary&lt;/button>
+                            &lt;button class="btn btn-success">Success&lt;/button>
+                            &lt;button class="btn btn-warning">Warning&lt;/button>
+                            &lt;button class="btn btn-danger">Danger&lt;/button>
+                            &lt;button class="btn btn-info">Info&lt;/button>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Buttons outline -->
+                <h3 id="outline-buttons" class="my-2">Outline Buttons</h3>
+                <p class="fw-light mb-4">
+                    Outline buttons have a border of action color and on hover gets filled with action color. In order to use buttons use class name <code class="text-primary fs-6">btn</code> and then followed by class name for type of outline button.
+                    eg: <code class="text-primary fs-6">btn btn-primary-outline</code> this gives a outline button of primary color.
+                </p>
+                
+                <!-- Buttons outline example -->
+                <div class="component-example-container p-5">
+                    <button class="btn btn-primary-outline">Primary</button>
+                    <button class="btn btn-secondary-outline">Secondary</button>
+                    <button class="btn btn-success-outline">Success</button>
+                    <button class="btn btn-warning-outline">Warning</button>
+                    <button class="btn btn-danger-outline">Danger</button>
+                    <button class="btn btn-info-outline">Info</button>
+                </div>
+
+                <!-- Buttons outline example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;button class="btn btn-primary-outline">Primary&lt;/button>
+                            &lt;button class="btn btn-secondary-outline">Secondary&lt;/button>
+                            &lt;button class="btn btn-success-outline">Success&lt;/button>
+                            &lt;button class="btn btn-warning-outline">Warning&lt;/button>
+                            &lt;button class="btn btn-danger-outline">Danger&lt;/button>
+                            &lt;button class="btn btn-info-outline">Info&lt;/button>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Buttons with icon -->
+                <h3 id="icon-buttons" class="my-2">Buttons with Icons</h3>
+                <p class="fw-light mb-4">
+                    Buttons can have icons inside them, simply add an icon of your choice.
+                </p>
+                
+                <!-- Buttons with icon example -->
+                <div class="component-example-container p-5">
+                    <button class="btn btn-primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to cart
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="far fa-trash-alt"></i>
+                        Remove
+                    </button>
+                    <button class="btn btn-icon">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <!-- Buttons with icon example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;button class="btn btn-primary">
+                                &lt;i class="fas fa-shopping-cart">&lt;/i>
+                                Add to cart
+                            &lt;/button>
+                            &lt;button class="btn btn-primary">
+                                &lt;i class="far fa-trash-alt">&lt;/i>
+                                Remove
+                            &lt;/button>
+                            &lt;button class="btn btn-icon">
+                                &lt;i class="fas fa-times">&lt;/i>
+                            &lt;/button>
+                        </code>
+                    </pre>
+                </div>
+                
+                <!-- Buttons links -->
+                <h3 id="link-buttons" class="my-2">Link Buttons</h3>
+                <p class="fw-light mb-4">
+                    Any anchor tag can be turned into a buttons by using classname
+                    <code class="text-primary fs-6">btn</code> 
+                    and then followed by class name <code class="text-primary fs-6">btn-link</code>
+                    eg: <code class="text-primary fs-6">btn btn-link tex-primary</code> this gives a link button with text of primary color.
+                </p>
+
+                <!-- Buttons links example -->
+                <div class="component-example-container p-5">
+                    <a class="btn btn-link text-primary" href="#">Link Button</a>
+                    <a class="btn btn-link text-secondary" href="#">Link Button</a>
+                </div>
+
+                <!-- Buttons links example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;a class="btn btn-link text-primary" href="#">Link Button&lt;/a>
+                            &lt;a class="btn btn-link text-secondary" href="#">Link Button&lt;/a>
+                        </code>
+                    </pre>
+                </div>
+                
+                <!-- Buttons sizes -->
+                <h3 id="button-sizes" class="my-2">Buttons Sizes</h3>
+                <p class="fw-light mb-4">
+                    Buttons can additionally have two more sizes, large and small. In order to use button sizes 
+                    use classes <code class="text-primary fs-6">btn-lg</code> and <code class="text-primary fs-6">btn-sm</code>
+                </p>
+
+                <!-- Buttons sizes example -->
+                <div class="component-example-container p-5">
+                    <button class="btn btn-lg btn-primary">Large</button>
+                    <button class="btn btn-sm btn-primary">Small</button>
+                </div>
+
+                <!-- Buttons sizes example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;button class="btn btn-lg btn-primary">Large&lt;/button>
+                            &lt;button class="btn btn-sm btn-primary">Small&lt;/button>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Float buttons -->
+                <h3 id="float-buttons" class="my-2">Float Buttons</h3>
+                <p class="fw-light mb-4">
+                    Float Buttons are used with positioning according to use case scenario, for eg: scroll to top of page. In order to use float button use class <code class="text-primary fs-6">btn-float</code>
+                </p>
+
+                <!-- Float buttons example -->
+                <div class="component-example-container p-5">
+                    <button class="btn-float btn-primary">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <button class="btn-float btn-primary">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                    <button class="btn-float btn-primary">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+
+                <!-- Float buttons example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;button class="btn-float btn-primary">
+                                &lt;i class="fas fa-plus">&lt;/i>
+                            &lt;/button>
+                            &lt;button class="btn-float btn-primary">
+                                &lt;i class="fas fa-arrow-up">&lt;/i>
+                            &lt;/button>
+                            &lt;button class="btn-float btn-primary">
+                                &lt;i class="fas fa-arrow-down">&lt;/i>
+                            &lt;/button>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#contained-buttons">Contained Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#outline-buttons">Outline Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#icon-buttons">Buttons with Icon</a>
+                    </li>
+                    <li>
+                        <a href="#link-buttons">Link Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#float-buttons">Float Buttons</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>

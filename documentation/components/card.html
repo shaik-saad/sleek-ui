@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Card | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+    
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+    
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Get Started</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../installation.html">Installation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li><a href="./buttons.html">Buttons</a></li>
+                            <li class="active"><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./input.html">Input</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 class="mt-4">Cards</h2>
+            <p class="fs-5 lh-3 fw-light">SLEEK UI provides cards which contain data and actions collectively in many variants</p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+                
+                
+                <!-- Card with text and outline -->
+                <h3 id="card-with-text" class="my-2">Card with only text</h3>
+                <p class="fw-light mb-4">
+                    This is the most basic card, it has just the heading and the text content.
+                </p>
+                
+                <!-- Card with text and outline example -->
+                <div class="component-example-container p-5">
+                    <div class="card card-outline">
+                        <div class="card-header">
+                            <h3 class="card-title">Card Title</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Necessitatibus laborum exercitationem voluptates sequi 
+                                molestias fugit nobis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card with text and outline example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card card-outline">
+                                &lt;div class="card-header">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                &lt;/div>
+                                &lt;div class="card-body">
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus laborum exercitationem 
+                                        voluptates sequi molestias fugit nobis.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card with dismiss and shadow -->
+                <h3 id="card-with-dismiss" class="my-2">Card with dismiss button</h3>
+                <p class="fw-light mb-4">
+                    This button has a dismiss button which can be used with user preferable functionality to close the card. Also it has an additional shadow on hover, this is added using class <code class="text-primary fs-6">card-shadow</code>
+                </p>
+
+                <!-- Card with dismiss and shadow example -->
+                <div class="component-example-container p-5">
+                    <div class="card card-shadow">
+                        <div class="card-header">
+                            <h3 class="card-title">Card Title</h3>
+                            <button class="btn btn-icon">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Necessitatibus laborum exercitationem voluptates sequi 
+                                molestias fugit nobis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card with dismiss and shadow example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card card-shadow">
+                                &lt;div class="card-header">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;button class="btn btn-icon">
+                                        &lt;i class="fas fa-times">&lt;/i>
+                                    &lt;/button>
+                                &lt;/div>
+                                &lt;div class="card-body">
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus laborum exercitationem voluptates 
+                                        sequi molestias fugit nobis.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card with image -->
+                <h3 id="card-with-image" class="my-2">Card with Image</h3>
+                <p class="fw-light mb-4">
+                    This card has an image and a body with heading and text
+                </p>
+
+                <!-- Card with image example -->
+                <div class="component-example-container p-5">
+                    <div class="card">
+                        <img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Necessitatibus laborum exercitationem voluptates sequi 
+                                molestias fugit nobis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Card with image example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card">
+                                &lt;img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                                &lt;div class="card-body">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus laborum exercitationem voluptates sequi 
+                                        molestias fugit nobis.
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card with image and button -->
+                <h3 id="card-with-image-and-button" class="my-2">Card with Image and a Button.</h3>
+                <p class="fw-light mb-4">
+                    This card has an image and a body with heading, text and a contained action button.  
+                </p>
+
+                <!-- Card with image and button example -->
+                <div class="component-example-container p-5">
+                    <div class="card">
+                        <img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Necessitatibus laborum exercitationem voluptates sequi 
+                                molestias fugit nobis.
+                            </p>
+                
+                            <button class="btn btn-primary" >Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card with image and button example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card">
+                                &lt;img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                                &lt;div class="card-body">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus laborum exercitationem voluptates sequi 
+                                        molestias fugit nobis.
+                                    &lt;/p>
+                        
+                                    &lt;button class="btn btn-primary">Read more&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card with badges -->
+                <h3 id="card-with-badges" class="my-2">Card with Badges</h3>
+                <p class="fw-light mb-4">
+                    This card has badges to allow user to have some eye catching text or info, also a like icon badge.
+                </p>
+
+                <!-- Card with badges example -->
+                <div class="component-example-container p-5">
+                    <div class="card">
+                        <span class="card-badge">New</span>
+                        <span class="card-badge-heart">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <img class="card-image card-image-vertical" src="../../assets/image-2.jpg" alt="cat potrait image for card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                
+                            <button class="btn btn-primary">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card with badges example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card">
+                                &lt;span class="card-badge">New&lt;/span>
+                                &lt;span class="card-badge-heart">
+                                    &lt;i class="fas fa-heart">&lt;/i>
+                                &lt;/span>
+                                &lt;img class="card-image card-image-vertical" src="../../assets/image-2.jpg" 
+                                alt="cat potrait image for card">
+                                &lt;div class="card-body">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    &lt;/p>
+                        
+                                    &lt;button class="btn btn-primary">Read more&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card - horizontal -->
+                <h3 id="horizontal-card" class="my-2">Horizontal Card</h3>
+                <p class="fw-light mb-4">
+                    This card is designed as horizontal which has text on the right side of card and image on left side. It is also responsive on smaller screens it becomes vertical card.
+                </p>
+
+                <!-- Card - horizontal example -->
+                <div class="component-example-container p-5">
+                    <div class="card card-horizontal">
+                        <img class="card-image card-image-vertical" src="../../assets/image-2.jpg" alt="cat potrait image for card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit, 
+                                Necessitatibus laborum exercitationem voluptates sequi 
+                                molestias fugit nobis, facilis unde soluta quos saepe 
+                                dignissimos nihil omnis possimus eum cupiditate!
+                            </p>
+                            
+                            <button class="btn" href="#">share</button>
+                            <button class="btn btn-primary">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card - horizontal example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card card-horizontal">
+                                &lt;img class="card-image card-image-vertical" src="../../assets/image-2.jpg" 
+                                    alt="cat potrait image for card">
+                                &lt;div class="card-body">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit, 
+                                        Necessitatibus laborum exercitationem voluptates sequi 
+                                        molestias fugit nobis, facilis unde soluta quos saepe 
+                                        dignissimos nihil omnis possimus eum cupiditate!
+                                    &lt;/p>
+                                    
+                                    &lt;button class="btn" href="#">share&lt;/button>
+                                    &lt;button class="btn btn-primary">Read more&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Card with text overlay-->
+                <h3 id="card-with-overlay" class="my-2">Card with Text Overlay</h3>
+                <p class="fw-light mb-4">
+                    This card has will display text over the whole card.
+                </p>
+
+                <!-- Card with text overlay example-->
+                <div class="component-example-container p-5">
+                    <div class="card">
+                        <img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                        <div class="card-body">
+                            <h3 class="card-title">Card Title</h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Necessitatibus laborum exercitationem voluptates 
+                                sequi molestias fugit nobis.
+                            </p>
+                
+                            <button class="btn btn-primary">Read more</button>
+                        </div>
+                        <div class="overlay-container">
+                            <h4 class="overlay-text">THIS BLOG HAS BEEN DELETED</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card with text overlay example code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;div class="card">
+                                &lt;img class="card-image" src="../../assets/image-4.jpg" alt="cat image for card">
+                                &lt;div class="card-body">
+                                    &lt;h3 class="card-title">Card Title&lt;/h3>
+                                    &lt;p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Necessitatibus laborum exercitationem voluptates 
+                                        sequi molestias fugit nobis.
+                                    &lt;/p>
+                        
+                                    &lt;button class="btn btn-primary">Read more&lt;/button>
+                                &lt;/div>
+                                &lt;div class="overlay-container">
+                                    &lt;h4 class="overlay-text">THIS BLOG HAS BEEN DELETED&lt;/h4>
+                                &lt;/div>
+                            &lt;/div>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#card-with-text">
+                            Card with Text
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#card-with-dismiss">
+                            Card with Dismiss
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#card-with-image">
+                            Card with Image
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#card-with-image-and-button">
+                            Card with image and button
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#card-with-badges">
+                            Card with Badges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#horizontal-card">
+                            Horizontal Card
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#card-with-overlay">
+                            Card with Text Overlay
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>

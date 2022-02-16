@@ -1,0 +1,314 @@
+/* CSS for scroll after the navbar */
+*[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -4rem; 
+    height: 4rem; 
+    visibility: hidden; 
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styles */
+.header-container {
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    height: 4rem;
+}
+
+.nav-brand img {
+    max-width: 10rem;
+}
+
+/* Home page hero section styles */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    height: calc(100vh - 4rem);
+    text-align: center;
+}
+
+.hero-container section{
+    width: 80%;
+}
+
+/* Page Layout using Grid */
+.page-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "side-nav intro intro intro intro toc"
+    "side-nav main main main main toc"
+    "side-nav main main main main toc"
+    "side-nav main main main main toc"
+    ;
+    gap: 1rem;
+}
+
+.side-nav-container {
+    grid-area: side-nav;
+}
+
+.main-container {
+    grid-area: main;
+}
+
+.content-introduction {
+    grid-area: intro;
+}
+
+.table-of-content-section {
+    grid-area: toc;
+}
+
+/* Menu toggler diplays only on small screens */
+.menu-toggler {
+    display: none;
+}
+
+/* Side Navigation Styles start here */
+.side-nav-container {
+    height: calc(100vh - 64px);
+    position: sticky;
+    top: 75px;
+}
+
+.side-nav{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+    /* Customizing the default scrollbar on side navigation */
+.side-nav::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+    transition: width 0.2s linear;
+}
+
+.side-nav:hover::-webkit-scrollbar{
+    width: 3px;
+}
+
+.side-nav::-webkit-scrollbar-thumb{
+    background: var(--sleek-gray-color);
+    border-radius: var(--border-radius-small);
+}
+
+    /* List Heading styles */
+.side-nav-list .list-title {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+    /* List item styles */
+.side-nav-sub-list > li {
+    border-top-left-radius: var(--border-radius-extra-small);
+    border-bottom-left-radius: var(--border-radius-extra-small);
+    transition: background 0.2s linear;
+}
+
+.side-nav-sub-list > li.active {
+    background: #f9f0ff;
+    border-right: 3px solid var(--primary-color)    
+}
+
+.side-nav-sub-list > li:not(.active):hover {
+    background: #f9f0ff;
+}
+
+.side-nav-sub-list li a {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+}
+/* Side navigation styles end here */
+
+
+/* Table of content section styles */
+.table-of-content-section {
+    width: fit-content;
+    height: fit-content;
+    position: sticky;
+    top: 75px;
+}
+
+.toc-title {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.table-of-content-section li {
+    padding-top: 0.25rem;
+}
+
+/* Footer styles start here */
+.footer-container {
+    background-color: var(--lynx-white-color);
+    height: 10rem;
+}
+
+.footer-container section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links i {
+    transition: color 0.4s ease;
+}
+
+.social-links i:hover {
+    color: var(--primary-color);
+}
+/* footer styles end here */
+
+
+/* Styles used in displaying component examples */
+/* code example styles */
+.component-example-container {
+    border-radius: var(--border-radius-small);
+    border: 1px solid var(--secondary-color);
+}
+
+.component-example-width{
+    max-width: 300px;
+}
+
+.component-example-container .grid-container > div {
+    height: 18rem;
+}
+
+.component-example-container .grid-container-inline > div {
+    height: 9rem;
+}
+
+.border-example > div {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: var(--lynx-white-color);
+    border: 1px solid var(--secondary-color);
+    margin: 0 0.25rem;
+}
+
+.background-example > div {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.code-container code{
+    border-radius: var(--border-radius-small);
+}
+
+.colors-example-container div {
+    width: 7.5rem;
+    height: 7.5rem;
+    padding: 0.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Responsiveness styles */
+@media only screen and (max-width: 768px) {
+
+    .hero-container {
+        width: 90%;
+    }
+
+    .page-container {
+        grid-template-areas: 
+        "side-nav side-nav side-nav side-nav side-nav side-nav"
+        "intro intro intro intro intro intro"
+        "toc toc toc toc toc toc"
+        "main main main main main main"
+        ;
+    }
+
+    /* Side nav toggler on small screens */
+    .menu-toggler {
+        display: flex;
+        cursor: pointer;
+        justify-content: space-between;
+        box-shadow: var(--box-shadow);
+    }
+
+    .menu-toggler-icon-transform {
+        transform: rotate(180deg);
+    }
+
+    .side-nav-container.show-side-nav-container {
+        height: 40vh;
+    }
+
+    .side-nav-container .show-side-nav {
+        display: block;
+    }
+
+    .side-nav-container {
+        height: 0;
+        transition: height 0.2s linear;
+        background: var(--lynx-white-color);
+        position: static;
+        top: auto;
+    }
+
+    .side-nav {
+        display: none;
+    }
+    /* side nav toggling ends here */
+
+    .table-of-content-section {
+        position: static;
+        top: auto;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    .hero-container {
+        width: 80%;
+    }
+    .page-container {
+        grid-template-areas: 
+        "side-nav intro intro intro intro intro"
+        "side-nav toc toc toc toc toc"
+        "side-nav main main main main main"
+        "side-nav main main main main main"
+        ;
+    }
+
+    .table-of-content-section {
+        position: static;
+        top: auto;
+    }
+
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .hero-container {
+        width: 60%;
+    }
+}
+
