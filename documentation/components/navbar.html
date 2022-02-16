@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Navbar | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li><a href="./buttons.html">Buttons</a></li>
+                            <li><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./input.html">Input</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li class="active"><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 class="mt-4">Navbar</h2>
+            <p class="fs-5 lh-3 fw-light">
+                Navigation bar is used to navigate through the website.
+            </p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+
+                <!-- Simple Navbar -->
+                <h3 id="navbar-example" class="my-2">Navbar</h3>
+                <p class="fw-light mb-4">
+                    Use <code class="text-primary fs-6">navbar</code> as wrapper for nav.
+                </p>
+
+                <!-- Simple Navbar Example-->
+                <div class="component-example-container p-5">
+                    <nav class="navbar">
+                        <div class="navbar-section">
+                            <a class="nav-brand" href="">Navbar</a>
+                        </div>
+                        <form class="nav-form">
+                            <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                        </form>
+                        <div class="navbar-section">
+                            <ul class="nav-list">
+                                <li class="nav-list-item active">
+                                    <a href="" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Simple Navbar Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;nav class="navbar">
+                                &lt;div class="navbar-section">
+                                    &lt;a class="nav-brand" href="">Navbar&lt;/a>
+                                &lt;/div>
+                                &lt;form class="nav-form">
+                                    &lt;input class="form-field" type="search" name="nav-search" placeholder="search...">
+                                &lt;/form>
+                                &lt;div class="navbar-section">
+                                    &lt;ul class="nav-list">
+                                        &lt;li class="nav-list-item active">
+                                            &lt;a href="" class="nav-link">
+                                                Services
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                About
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                Contact us
+                                            &lt;/a>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                            &lt;/nav>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Primary Navbar -->
+                <h3 id="primary-navbar-example" class="my-2">Primary Navbar</h3>
+                <p class="fw-light mb-4">
+                    Use <code class="text-primary fs-6">navbar</code> as wrapper for nav and use 
+                    <code class="text-primary fs-6">navbar-primary</code> to get a primary color.
+                </p>
+
+                <!-- Primary Navbar Example -->
+                <div class="component-example-container p-5">
+                    <nav class="navbar navbar-primary">
+                        <div class="navbar-section">
+                            <a class="nav-brand" href="">Navbar</a>
+                        </div>
+                        <div class="navbar-section">
+                            <ul class="nav-list">
+                                <li class="nav-list-item active">
+                                    <a href="" class="nav-link">
+                                     Services
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                     About
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                     Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Primary Navbar Example Code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;nav class="navbar navbar-primary">
+                                &lt;div class="navbar-section">
+                                    &lt;a class="nav-brand" href="">Navbar&lt;/a>
+                                &lt;/div>
+                                &lt;div class="navbar-section">
+                                    &lt;ul class="nav-list">
+                                        &lt;li class="nav-list-item active">
+                                            &lt;a href="" class="nav-link">
+                                             Services
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                             About
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                             Contact us
+                                            &lt;/a>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                            &lt;/nav>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Dark Navbar -->
+                <h3 id="dark-navbar-example" class="my-2">Dark Navbar</h3>
+                <p class="fw-light mb-4">
+                    Use <code class="text-primary fs-6">navbar</code> as wrapper for nav and use 
+                    <code class="text-primary fs-6">navbar-dark</code> to get a dark color.
+                </p>
+
+                <!-- Dark Navbar Example -->
+                <div class="component-example-container p-5">
+                    <nav class="navbar navbar-dark">
+                        <div class="navbar-section">
+                            <a class="nav-brand" href="">Navbar</a>
+                        </div>
+                        <div class="navbar-section">
+                            <ul class="nav-list">
+                                <li class="nav-list-item active">
+                                    <a href="" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                            <form class="nav-form">
+                                <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Dark Navbar Example Code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;nav class="navbar navbar-dark">
+                                &lt;div class="navbar-section">
+                                    &lt;a class="nav-brand" href="">Navbar&lt;/a>
+                                &lt;/div>
+                                &lt;div class="navbar-section">
+                                    &lt;ul class="nav-list">
+                                        &lt;li class="nav-list-item active">
+                                            &lt;a href="" class="nav-link">
+                                                Services
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                About
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                Contact us
+                                            &lt;/a>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                    &lt;form class="nav-form">
+                                        &lt;input class="form-field" type="search" name="nav-search" placeholder="search...">
+                                    &lt;/form>
+                                &lt;/div>
+                            &lt;/nav> 
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Light navbar -->
+                <h3 id="light-navbar-example" class="my-2">Light Navbar</h3>
+                <p class="fw-light mb-4">
+                    Use <code class="text-primary fs-6">navbar</code> as wrapper for nav and use 
+                    <code class="text-primary fs-6">navbar-light</code> to get a light color.
+                </p>
+
+                <!-- Light navbar example -->
+                <div class="component-example-container p-5">
+                    <nav class="navbar navbar-light">
+                        <div class="navbar-section">
+                            <a class="nav-brand" href="">Navbar</a>
+                        </div>
+                        <form class="nav-form">
+                            <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                        </form>
+                        <div class="navbar-section">
+                            <ul class="nav-list">
+                                <li class="nav-list-item active">
+                                    <a href="" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-list-item">
+                                    <a href="" class="nav-link">
+                                        Contact us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Light navbar example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;nav class="navbar navbar-light">
+                                &lt;div class="navbar-section">
+                                    &lt;a class="nav-brand" href="">Navbar&lt;/a>
+                                &lt;/div>
+                                &lt;form class="nav-form">
+                                    &lt;input class="form-field" type="search" name="nav-search" placeholder="search...">
+                                &lt;/form>
+                                &lt;div class="navbar-section">
+                                    &lt;ul class="nav-list">
+                                        &lt;li class="nav-list-item active">
+                                            &lt;a href="" class="nav-link">
+                                                Services
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                About
+                                            &lt;/a>
+                                        &lt;/li>
+                                        &lt;li class="nav-list-item">
+                                            &lt;a href="" class="nav-link">
+                                                Contact us
+                                            &lt;/a>
+                                        &lt;/li>
+                                    &lt;/ul>
+                                &lt;/div>
+                            &lt;/nav>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#navbar-example">
+                            Simple Navbar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#primary-navbar-example">
+                            Primary Navbar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#dark-navbar-example">
+                            Dark Navbar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#light-navbar-example">
+                            Light Navbar
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>
