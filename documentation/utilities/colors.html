@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li class="active"><a href="../components/alerts.html">Alerts</a></li>
+                            <li><a href="../components/avatar.html">Avatar</a></li>
+                            <li><a href="../components/badge.html">Badge</a></li>
+                            <li><a href="../components/buttons.html">Buttons</a></li>
+                            <li><a href="../components/card.html">Card</a></li>
+                            <li><a href="../components/images.html">Images</a></li>
+                            <li><a href="../components/input.html">Input</a></li>
+                            <li><a href="../components/typography.html">Typography</a></li>
+                            <li><a href="../components/list.html">List</a></li>
+                            <li><a href="../components/navbar.html">Navbar</a></li>
+                            <li><a href="../components/modal.html">Modal</a></li>
+                            <li><a href="../components/rating.html">Rating</a></li>
+                            <li><a href="../components/toasts.html">Toasts</a></li>
+                            <li><a href="../components/grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./background.html">Background</a></li>
+                            <li><a href="./borders.html">Borders</a></li>
+                            <li><a href="./colors.html">Colors</a></li>
+                            <li><a href="./spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 id="color-palette" class="mt-4">Color Palette</h2>
+            <p class="fs-5 lh-4 fw-light">These are the colors used to style SLEEK UI</p>
+            <p class="fs-5 lh-4 fw-light">600 are the colors used on hover.</p>
+        </section>
+        
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+                
+                <p class="fw-light mb-4">To use these colors explicit background color classes are provided. Check out the background utilities</p>
+                <div class="component-example-container p-5 colors-example-container">
+                    <div class="bg-primary">
+                        Primary
+                        <span>#805AD5</span>
+                    </div>
+                    <div class="bg-primary-600">
+                        Primary 600
+                        <span>#6B46C1</span>
+                    </div>
+                    <div class="bg-secondary">
+                        Secondary
+                        <span>#A0AEC0</span>
+                    </div>
+                    <div class="bg-secondary-600">
+                        Secondary 600
+                        <span>#4A5568</span>
+                    </div>
+                    <div class="bg-black text-gray">
+                        Black
+                        <span>#282828</span>
+                    </div>
+                    <div class="bg-white">
+                        White
+                        <span>#FFF</span>
+                    </div>
+                    <div class="bg-lynx-white">
+                        Lynx White
+                        <span>#F7F7F7</span>
+                    </div>
+                    <div class="bg-success">
+                        Success
+                        <span>#52C41A</span>
+                    </div>
+                    <div class="bg-success-600">
+                        Success 600
+                        <span>#389E0D</span>
+                    </div>
+                    <div class="bg-warning">
+                        Warning
+                        <span>#ffec3d</span>
+                    </div>
+                    <div class="bg-warning-600">
+                        Warning 600
+                        <span>#fadb14</span>
+                    </div>
+                    <div class="bg-danger">
+                        Danger
+                        <span>#FF4D4F</span>
+                    </div>
+                    <div class="bg-danger-600">
+                        Danger 600
+                        <span>#f5222d</span>
+                    </div>
+                    <div class="bg-info">
+                        Info
+                        <span>#91d5ff</span>
+                    </div>
+                    <div class="bg-info-600">
+                        Info 600
+                        <span>#40a9ff</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#color-palette">
+                            Color Palette
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>
