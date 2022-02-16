@@ -11,6 +11,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Header styles */
 .header-container {
     box-shadow: var(--box-shadow);
@@ -40,6 +46,10 @@ html {
 
 .hero-container section{
     width: 80%;
+}
+
+.hero-container button a{
+    display: block;
 }
 
 /* Page Layout using Grid */
@@ -156,6 +166,7 @@ html {
 .footer-container {
     background-color: var(--lynx-white-color);
     height: 10rem;
+    margin-top: auto;
 }
 
 .footer-container section {
