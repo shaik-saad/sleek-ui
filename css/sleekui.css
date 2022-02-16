@@ -1,0 +1,25 @@
+@import './resetDefault.css';
+@import './variables.css';
+@import '../components/alert/alert.css';
+@import '../components/avatar/avatar.css';
+@import '../components/badge/badge.css';
+@import '../components/button/button.css';
+@import '../components/card/card.css';
+@import '../components/grid/grid.css';
+@import '../components/image/image.css';
+@import '../components/input/input.css';
+@import '../components/lists/list.css';
+@import '../components/modal/modal.css';
+@import '../components/navbar/navbar.css';
+@import '../components/rating/rating.css';
+@import '../components/toast/toast.css';
+@import '../components/utilities/border/border.css';
+@import '../components/utilities/color/backgroundColor.css';
+@import '../components/utilities/color/textColor.css';
+@import '../components/utilities/font-utils/fontUtils.css';
+@import '../components/utilities/spacing/margin.css';
+@import '../components/utilities/spacing/padding.css';
+@import '../components/utilities/typography/typography.css';
+
+/* font awesome icons cdn */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css);
