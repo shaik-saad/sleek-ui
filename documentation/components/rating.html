@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="../../assets/titleLogo.png" type="image/x-icon">
+    <title>Rating | SLEEK UI</title>
+
+    <!-- highlight.js cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
+
+    <!-- SLEEK UI CSS-->
+    <link rel="stylesheet" href="../../css/sleekui.css">
+
+    <!-- Documentaion Site CSS -->
+    <link rel="stylesheet" href="../doc-site.css">
+</head>
+<body>
+
+    <!-- Header starts here -->
+    <header class="header-container">
+        <nav class="navbar">
+            <div class="navbar-section">
+                <a class="nav-brand" href="../../index.html">
+                    <img src="../../assets/sleekui-logo.png" alt="SLEEK UI BRAND LOGO">
+                </a>
+            </div>
+            <div class="navbar-section">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="../../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="https://github.com/shaik-saad/sleek-ui" class="nav-link">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Side menu toggler which is visble only till 768px-->
+    <div class="menu-toggler px-4 py-6">
+        <p class="list-title fw-bold">Docs</p>
+        <i class="fa-solid fa-angle-down menu-toggler-icon"></i>
+    </div>
+    <!-- Side menu toggler ends here-->
+
+    <!-- Page Container Grid -->
+    <div class="page-container">
+
+        <!-- Side Navigation Starts here -->
+        <aside class="side-nav-container">
+            <nav class="side-nav pt-4">
+                <ul class="side-nav-list">
+                    <li>
+                        <p class="list-title fw-bold">Components</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="./alerts.html">Alerts</a></li>
+                            <li><a href="./avatar.html">Avatar</a></li>
+                            <li><a href="./badge.html">Badge</a></li>
+                            <li><a href="./buttons.html">Buttons</a></li>
+                            <li><a href="./card.html">Card</a></li>
+                            <li><a href="./images.html">Images</a></li>
+                            <li><a href="./input.html">Input</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
+                            <li><a href="./list.html">List</a></li>
+                            <li><a href="./navbar.html">Navbar</a></li>
+                            <li><a href="./modal.html">Modal</a></li>
+                            <li class="active"><a href="./rating.html">Rating</a></li>
+                            <li><a href="./toasts.html">Toasts</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="list-title fw-bold">Utilities</p>
+                        <ul class="side-nav-sub-list">
+                            <li><a href="../utilities/background.html">Background</a></li>
+                            <li><a href="../utilities/borders.html">Borders</a></li>
+                            <li><a href="../utilities/colors.html">Colors</a></li>
+                            <li><a href="../utilities/spacing.html">Spacing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Side Navigation ends here -->
+
+        <!-- Component Introduction Section-->
+        <section class="content-introduction mx-4">
+            <h2 class="mt-4">Rating</h2>
+            <p class="fs-5 lh-3 fw-light">Rating! as name itself describes you can rate with this component.</p>
+        </section>
+
+        <!-- Main Content Section starts here-->
+        <main class="main-container mx-4" >
+            <section class="content-section">
+
+                <!-- Rating -->
+                <h3 id="rating-example" class="my-2">Example</h3>
+                <p class="fw-light mb-4">
+                    Rating component has a output rating displayed, if not needed it can be removed.
+                </p>
+                <!-- Rating Example -->
+                <div class="component-example-container p-5">
+                    <div class="rating-container">
+                        <input class="rating-input" type="radio" name="rating" id="rate-5" value="5">
+                        <label class="rating-label" for="rate-5"><i class="fas fa-star"></i></label>
+                
+                        <input class="rating-input" type="radio" name="rating" id="rate-4" value="4">
+                        <label class="rating-label" for="rate-4"><i class="fas fa-star"></i></label>
+                
+                        <input class="rating-input" type="radio" name="rating" id="rate-3" value="3">
+                        <label class="rating-label" for="rate-3"><i class="fas fa-star"></i></label>
+                        
+                        <input class="rating-input" type="radio" name="rating" id="rate-2" value="2">
+                        <label class="rating-label" for="rate-2"><i class="fas fa-star"></i></label>
+                        
+                        <input class="rating-input" type="radio" name="rating" id="rate-1" value="1">
+                        <label class="rating-label" for="rate-1"><i class="fas fa-star"></i></label>
+                    </div>
+                    <div class="rating-output">0 <i class="fas fa-star"></i></div>
+                </div>
+                <!-- Rating Example Code -->
+                <div class="code-container">
+                    <pre>
+<!-- Indentation is intentionally removed -->
+                        <code class="language-html">
+    &lt;div class="rating-container">
+        &lt;input class="rating-input" type="radio" name="rating" id="rate-5" value="5">
+        &lt;label class="rating-label" for="rate-5">&lt;i class="fas fa-star">&lt;/i>&lt;/label>
+
+        &lt;input class="rating-input" type="radio" name="rating" id="rate-4" value="4">
+        &lt;label class="rating-label" for="rate-4">&lt;i class="fas fa-star">&lt;/i>&lt;/label>
+
+        &lt;input class="rating-input" type="radio" name="rating" id="rate-3" value="3">
+        &lt;label class="rating-label" for="rate-3">&lt;i class="fas fa-star">&lt;/i>&lt;/label>
+        
+        &lt;input class="rating-input" type="radio" name="rating" id="rate-2" value="2">
+        &lt;label class="rating-label" for="rate-2">&lt;i class="fas fa-star">&lt;/i>&lt;/label>
+        
+        &lt;input class="rating-input" type="radio" name="rating" id="rate-1" value="1">
+        &lt;label class="rating-label" for="rate-1">&lt;i class="fas fa-star">&lt;/i>&lt;/label>
+    &lt;/div>
+    &lt;div class="rating-output">0 &lt;i class="fas fa-star">&lt;/i>&lt;/div>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Rating Example js code -->
+                <h4 id="rating-js-example" class="my-2">JS code example</h4>
+                <p class="fw-light mb-4">This is used to display the rating output.</p>
+                <div class="code-container">
+                    <pre>
+<!-- Indentation is intentionally removed -->   
+                        <code>
+    const ratingLabels = document.querySelectorAll(".rating-label")
+    const ratingInputs = document.querySelectorAll(".rating-input")
+    const ratingOutput = document.querySelector(".rating-output")
+
+    ratingLabels.forEach((label, index) => {
+        label.addEventListener("click", () => {
+            ratingOutput.innerHTML = `${ratingInputs[index].value} &lt;i class="fas fa-star">&lt;/i>`
+        })
+    })
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <!-- Main Content Section ends here-->
+
+        <!-- Table of Content section starts here-->
+        <section class="table-of-content-section text-gray text-sm mx-4">
+            <p class="toc-title py-2 pr-4 fw-semi-bold">ON THIS PAGE</p>
+            <nav class="ml-4">
+                <ul>
+                    <li>
+                        <a href="#rating-example">
+                            Rating
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#rating-js-example">
+                            JS code example
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- Table of Content section ends here-->
+    
+    </div>
+    <!-- Page Container Grid ends here-->
+
+    <!-- Footer starts here-->
+    <footer class="footer-container">
+        <section>
+            <p>Designed and built with <i class="fas fa-heart text-danger mx-1"></i> by <span class="ml-1">&lt;>Shaik Saadullah&lt;/></span></p>
+            <div class="social-links mt-4 fs-3">
+                <a href="https://github.com/shaik-saad">
+                    <i class="fa-brands fa-github mx-2"></i>
+                </a>
+                <a href="https://twitter.com/shaiksaadullah">
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-saad/">
+                    <i class="fa-brands fa-linkedin mx-2"></i>
+                </a>
+            </div>
+            <small class=" text-gray mt-2">© 2022 | <span class="text-primary">SLEEK UI</span></small>
+        </section>    
+    </footer>
+    <!-- Footer ends here-->
+
+    <!-- Highlight.js Script Tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- Site script Tag-->
+    <script src="../doc-site.js"></script>
+</body>
+</html>
