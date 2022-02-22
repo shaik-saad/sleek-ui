@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+
+    <script src="https://kit.fontawesome.com/10d4b640fa.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../css/resetDefault.css">
+    <link rel="stylesheet" href="../../css/variables.css">
+    <link rel="stylesheet" href="../utilities/typography/typography.css">
+    <link rel="stylesheet" href="../component.css">
+    <link rel="stylesheet" href="../input/input.css">
+    <link rel="stylesheet" href="./slider.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="range-labels">
+            <span class="value-low">0</span>
+            <span class="value-high">1000</span>
+        </div>
+        <input type="range" name="slider" class="range-slider" min="0" value="500" max="1000">
+        <div class="current-value-container">
+            <label for="current-value">Max:</label>
+            <input type="number" class=" form-field current-value" id="current-value" value="500" min="0" max="1000">
+        </div>
+    </div>
+
+    <script src="slider.js"></script>
+</body>
+</html>

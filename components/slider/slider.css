@@ -1,0 +1,23 @@
+.range-slider {
+    width: 100%;
+    margin: 0.25rem 0;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.current-value-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.current-value {
+    width: 6rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
