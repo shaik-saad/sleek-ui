@@ -78,3 +78,40 @@ if(window.location.pathname === "/documentation/components/toasts.html") {
         })
     })
 }
+
+// This if block will work on NAVBAR COMPONENT page
+if(window.location.pathname === "/documentation/components/navbar.html"){
+
+    // Creating references to hamburger/drawer compnents
+    const navbarTogglerBtn = document.querySelector(".navbar-toggler")
+    const collapseSection = document.querySelector(".collapse-section")
+    const collapseCloseBtn = document.querySelector(".collapse-close-btn")
+
+    // open drawer when clicked on hamburger
+    navbarTogglerBtn.addEventListener("click", () => {
+        collapseSection.classList.add("show-collapse-section")
+    })
+
+    // close drawer when clicked on close button
+    collapseCloseBtn.addEventListener('click', () => {
+        collapseSection.classList.remove("show-collapse-section")
+    }) 
+}
+
+// This if block will work on SLIDER COMPONENT page
+if(window.location.pathname === "/documentation/components/slider.html") {
+
+    // Creating references to range input elements
+    const rangeSlider = document.querySelector(".range-slider")
+    const currentValue = document.querySelector(".current-value")
+
+    // updating input values on range slider input change
+    rangeSlider.addEventListener("input", () => {
+        currentValue.value = rangeSlider.value
+    })
+
+    // updating range slider on input value change
+    currentValue.addEventListener('input', () => {
+        rangeSlider.value = currentValue.value
+    })
+}
