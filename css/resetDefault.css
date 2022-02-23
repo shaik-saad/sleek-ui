@@ -36,19 +36,13 @@ textarea {
     font: inherit;
 }
 
-@media only screen and (max-width: 600px) {
-    html {
-        font-size: 62.5%;
-    }
-}
-
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 768px) {
     html {
         font-size: 75%;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     html {
         font-size: 87.5%;
     }
@@ -60,7 +54,7 @@ textarea {
     }
 }
 
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1600px) {
     html {
         font-size: 112.5%;
     }
