@@ -74,15 +74,16 @@
                             <li><a href="./badge.html">Badge</a></li>
                             <li><a href="./buttons.html">Buttons</a></li>
                             <li><a href="./card.html">Card</a></li>
+                            <li><a href="./grid.html">Grid</a></li>
                             <li><a href="./images.html">Images</a></li>
                             <li><a href="./input.html">Input</a></li>
-                            <li><a href="./typography.html">Typography</a></li>
                             <li><a href="./list.html">List</a></li>
-                            <li class="active"><a href="./navbar.html">Navbar</a></li>
                             <li><a href="./modal.html">Modal</a></li>
+                            <li class="active"><a href="./navbar.html">Navbar</a></li>
                             <li><a href="./rating.html">Rating</a></li>
+                            <li><a href="./slider.html">Slider</a></li>
                             <li><a href="./toasts.html">Toasts</a></li>
-                            <li><a href="./grid.html">Grid</a></li>
+                            <li><a href="./typography.html">Typography</a></li>
                         </ul>
                     </li>
                     <li>
@@ -395,6 +396,120 @@
                         </code>
                     </pre>
                 </div>
+
+
+                <!-- Hamburger/drawer navbar -->
+                <h3 id="ham-drawer-navbar-example" class="my-2">Hamburger/Drawer Navbar</h3>
+                <p class="fw-light mb-4">
+                    This navbar will collapse on small screens and hamburger will be displayed. This hamburger will open a drawer when clicked on it. 
+                </p>
+
+                <!-- Hamburger/drawer navbar example -->
+                <div class="component-example-container p-5">
+                    <nav class="navbar">
+                        <div class="navbar-section">
+                            <a class="nav-brand" href="">Navbar</a>
+                        </div>
+                        <button class="btn btn-icon navbar-toggler">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse-section">
+                            <div class="navbar-section">
+                                <div class="nav-section-header">
+                                    <span class="text-md fw-semi-bold">Menu</span>
+                                    <button class="btn btn-icon collapse-close-btn">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <form class="nav-form">
+                                    <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                                </form>
+                                <ul class="nav-list">
+                                    <li class="nav-list-item active">
+                                        <a href="" class="nav-link">
+                                            Services
+                                        </a>
+                                    </li>
+                                    <li class="nav-list-item">
+                                        <a href="" class="nav-link">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="nav-list-item">
+                                        <a href="" class="nav-link">
+                                            Contact us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- hamburger/drawer example code -->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-html">
+                            &lt;nav class="navbar">
+                                &lt;div class="navbar-section">
+                                    &lt;a class="nav-brand" href="">Navbar&lt;/a>
+                                &lt;/div>
+                                &lt;button class="btn btn-icon navbar-toggler">
+                                    &lt;i class="fas fa-bars">&lt;/i>
+                                &lt;/button>
+                                &lt;div class="collapse-section">
+                                    &lt;div class="navbar-section">
+                                        &lt;div class="nav-section-header">
+                                            &lt;span class="text-md fw-semi-bold">Menu&lt;/span>
+                                            &lt;button class="btn btn-icon collapse-close-btn">
+                                                &lt;i class="fas fa-times">&lt;/i>
+                                            &lt;/button>
+                                        &lt;/div>
+                                        &lt;form class="nav-form">
+                                            &lt;input class="form-field" type="search" name="nav-search" placeholder="search...">
+                                        &lt;/form>
+                                        &lt;ul class="nav-list">
+                                            &lt;li class="nav-list-item active">
+                                                &lt;a href="" class="nav-link">
+                                                    Services
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li class="nav-list-item">
+                                                &lt;a href="" class="nav-link">
+                                                    About
+                                                &lt;/a>
+                                            &lt;/li>
+                                            &lt;li class="nav-list-item">
+                                                &lt;a href="" class="nav-link">
+                                                    Contact us
+                                                &lt;/a>
+                                            &lt;/li>
+                                        &lt;/ul>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/nav>
+                        </code>
+                    </pre>
+                </div>
+
+                <!-- Hamburger/drawer navbar example js code-->
+                <div class="code-container">
+                    <pre>
+                        <code class="language-js">
+                            const navbarTogglerBtn = document.querySelector(".navbar-toggler")
+                            const collapseSection = document.querySelector(".collapse-section")
+                            const collapseCloseBtn = document.querySelector(".collapse-close-btn")
+
+                            navbarTogglerBtn.addEventListener("click", () => {
+                                collapseSection.classList.add("show-collapse-section")
+                            })
+
+                            collapseCloseBtn.addEventListener('click', () => {
+                                collapseSection.classList.remove("show-collapse-section")
+                            }) 
+                        </code>
+                    </pre>
+                </div>
             </section>
         </main>
         <!-- Main Content Section ends here-->
@@ -422,6 +537,11 @@
                     <li>
                         <a href="#light-navbar-example">
                             Light Navbar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ham-drawer-navbar-example">
+                            Hamburger/Drawer
                         </a>
                     </li>
                 </ul>
