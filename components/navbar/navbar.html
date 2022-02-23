@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="../button/button.css">
     <link rel="stylesheet" href="../input/input.css">
     <link rel="stylesheet" href="./navbar.css">
+
+    <script src="https://kit.fontawesome.com/10d4b640fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <nav class="navbar navbar-primary">
+    <nav class="navbar navbar-primary">
        <div class="navbar-section">
            <a class="nav-brand" href="">Navbar</a>
        </div>
@@ -123,5 +125,46 @@
             </ul>
         </div>
     </nav>
+
+    <nav class="navbar">
+        <div class="navbar-section">
+            <a class="nav-brand" href="">Navbar</a>
+        </div>
+        <button class="btn btn-icon navbar-toggler">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse-section">
+            <div class="navbar-section">
+                <div class="nav-section-header">
+                    <span class="text-md fw-semi-bold">Menu</span>
+                    <button class="btn btn-icon collapse-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <form class="nav-form">
+                    <input class="form-field" type="search" name="nav-search" placeholder="search...">
+                </form>
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="" class="nav-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="" class="nav-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="" class="nav-link">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    
+    <script src="./navbar.js"></script>
 </body>
 </html>
